@@ -1,5 +1,7 @@
 import React from 'react';
 import Home from './Home'
+import UserProfile from './UserProfile'
+
 import logo from './logo.svg';
 import './App.css';
 import {
@@ -17,6 +19,9 @@ function App() {
           <Route path ="/home">
             <Home 
             />
+          </Route>
+          <Route path ="/profile">
+            <UserProfile/>
           </Route>
           <Route path ="/">
             <Home 
