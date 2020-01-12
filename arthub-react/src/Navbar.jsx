@@ -3,7 +3,7 @@ import React from 'react'
 class Navbar extends React.Component {
     render() {
         return(
-        <nav style={{ backgroundColor: "transparent", boxShadow: "none" }}> 
+        <nav style={{ backgroundColor: "transparent", boxShadow: "none", marginBottom: "20px"}}> 
         <div className="container nav-wrapper" >
             <div className="row">
                 <img src="/images/logo.png" width="65"></img>
