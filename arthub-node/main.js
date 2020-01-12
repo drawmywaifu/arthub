@@ -69,6 +69,24 @@ app.get('/artwork', (req, res) => {
     })
 })
 
+app.get('/artwork/:id', (req, res) => {
+    Artwork.findById(req.params.id, (err, artwork) => {
+        res.send(artwork)
+    })
+})
+
+app.get('/request', (req, res) => {
+    Request.find({}, (err, requests) => {
+        res.send(requests)
+    })
+})
+
+app.get('/request/:id', (req, res) => {
+    Request.findById(req.params.id, (err, request) => {
+        res.send(request)
+    })
+})
+
 app.post('/user', (req, res) => {
     console.log(req.body);
     var newUser = req.body;
